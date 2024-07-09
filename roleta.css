@@ -236,7 +236,10 @@
         width: 57px;  
         font-size: 16px;  
     } 
- 
+}
+
+
+@media (max-width: 968px) {
     .coluna-zero-2, .coluna-zero {
         margin-top: 194px;
         margin-left: -163px;
