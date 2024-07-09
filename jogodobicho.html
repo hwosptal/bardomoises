@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="jogodobicho.css">
+    <title>Jogo do Bicho - Bar do Moisés</title> 
+</head>
+<body>
+    <main class="main">
+        <div class="top-bar">
+            <div class="top-site">
+                <header class="header">
+                    <a href="#" id="barDoMoises">BAR DO MOISÉS</a>
+                </header> 
+                <div class="navbar"> 
+                    <nav class="nav">
+                        <ul class="ul">
+                            <li><a href="index.html">Roleta</a></li>
+                            <li><a href="#" id="jogo-selecionado">Jogo do Bicho</a></li> 
+                        </ul> 
+                    </nav>
+                </div>
+            </div>
+        </div> 
+        <div class="win_lose">
+            <p><span>VITÓRIAS </span> <span id="partidas_ganhas">0</span></p>
+            <p><span>DERROTAS </span> <span id="partidas_perdidas">0</span></p>
+        </div>
+        <div class="title-bar">
+            <div class="tituloPag">
+                <h1 style="margin-top: 25px;text-align: center;margin-bottom: 45px;">JOGO DO BICHO</h1>
+            </div>
+            <div class="status-jogador"> 
+                <p id="dinheiro">DINHEIRO GANHO +</p>
+                <p id="dinheiro_perdido">DINHEIRO PERDIDO -</p>
+                <p id="partidas_jogadas">PARTIDAS JOGADAS 0</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="bichos">
+                <div class="container-animais">
+                    <img onclick="animal_esc('Avestruz')"  id="Avestruz"  src="primeira-fileira/avestruz.png">
+                    <img onclick="animal_esc('Aguia')"     id="Aguia"     src="primeira-fileira/aguia.png">
+                    <img onclick="animal_esc('Burro') "    id="Burro"     src="primeira-fileira/burro.png"> 
+                    <img onclick="animal_esc('Borboleta')" id="Borboleta" src="primeira-fileira/borboleta.png">
+                    <img onclick="animal_esc('Cachorro')"  id="Cachorro" src="primeira-fileira/cachorro.jpg"> 
+
+                    <img onclick="animal_esc('Cabra')"      id="Cabra"      src="segunda-fileira/cabra.png">
+                    <img onclick="animal_esc('Carneiro')"   id="Carneiro"   src="segunda-fileira/carneiro.png">
+                    <img onclick="animal_esc('Camelo') "    id="Camelo"     src="segunda-fileira/camelo.png"> 
+                    <img onclick="animal_esc('Cobra')"      id="Cobra"      src="segunda-fileira/cobrac.png">
+                    <img onclick="animal_esc('Coelho')"     id="Coelho"     src="segunda-fileira/coelho.png">
+
+                    <img onclick="animal_esc('Cavalo')"      id="Cavalo"        src="terceira-fileira/cavalo.png">
+                    <img onclick="animal_esc('Elefante')"   id="Elefante"       src="terceira-fileira/elefante.png">
+                    <img onclick="animal_esc('Galo') "    id="Galo"             src="terceira-fileira/galo.png"> 
+                    <img onclick="animal_esc('Gato')"      id="Gato"            src="terceira-fileira/gato.png">
+                    <img onclick="animal_esc('Jacare')"     id="Jacare"         src="terceira-fileira/jacare.png">
+
+                    <img onclick="animal_esc('Leao')"      id="Leao"        src="quarta-fileira/leao.png">
+                    <img onclick="animal_esc('Macaco')"   id="Macaco"       src="quarta-fileira/macaco.png">
+                    <img onclick="animal_esc('Porco') "    id="Porco"             src="quarta-fileira/porco.png"> 
+                    <img onclick="animal_esc('Pavao')"      id="Pavao"            src="quarta-fileira/pavao.png">
+                    <img onclick="animal_esc('Peru')"     id="Peru"         src="quarta-fileira/peru.png">
+
+                    <img onclick="animal_esc('Touro')"      id="Touro"        src="quinta-fileira/touro.png">
+                    <img onclick="animal_esc('Tigre')"   id="Tigre"       src="quinta-fileira/tigre.png">
+                    <img onclick="animal_esc('Urso') "    id="Urso"             src="quinta-fileira/urso.png"> 
+                    <img onclick="animal_esc('Veado')"      id="Veado"            src="quinta-fileira/veado.png">
+                    <img onclick="animal_esc('Vaca')"     id="Vaca"         src="quinta-fileira/vaca.png">
+                </div>
+            </div>
+            <div class="apostar">   
+                <input id="aposta" type="number" placeholder="Apostar"> 
+                <button onclick="jogar()">APOSTAR</button>
+                <p id="animal"></p>  
+                <p id="error"></p>
+                <p id="animal_sorteado"></p>
+                <p id="resultado"></p>
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        (function trocaCor() {
+            var bar = document.getElementById("barDoMoises");
+            var cor = bar.style.color;
+
+            if(cor === 'rgb(209, 15, 193)') {
+                bar.style.color = '#fff';
+            } else {
+                bar.style.color = '#d10fc1';
+            }
+            setTimeout(trocaCor,300);
+        })();
+    </script>
+    <script type="text/javascript" src="jogodobicho.js"></script>
+</body>
+</html>

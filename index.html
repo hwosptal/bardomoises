@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="global.css">
+    <link rel="stylesheet" href="roleta.css">
+    <title>Roleta - Bar do Moisés</title> 
+</head>
+<body>
+    <main class="main">
+        <div class="top-bar">
+            <div class="top-site">
+                <header class="header">
+                    <a href="#" id="barDoMoises">BAR DO MOISÉS</a>
+                </header> 
+                <div class="navbar"> 
+                    <nav class="nav">
+                        <ul class="ul">
+                            <li><a href="index.html" id="jogo-selecionado">Roleta</a></li>
+                            <li><a href="jogodobicho.html">Jogo do Bicho</a></li> 
+                        </ul> 
+                    </nav>
+                </div>
+            </div>
+        </div>   
+        <div class="win_lose">
+            <p><span>VITÓRIAS </span> <span id="partidas_ganhas">0</span></p>
+            <p><span>DERROTAS </span> <span id="partidas_perdidas">0</span></p>
+        </div>
+        <div class="title-bar">
+            <div class="tituloPag">
+                <h1 style="margin-top: 25px;text-align: center;margin-bottom: 45px;">ROLETA</h1>
+            </div>
+            <div class="status-jogador"> 
+                <p id="dinheiro">DINHEIRO GANHO +</p>
+                <p id="dinheiro_perdido">DINHEIRO PERDIDO -</p>
+                <p id="partidas_jogadas">PARTIDAS JOGADAS 0</p>
+            </div>
+        </div>
+        <div class="content">
+            <div class="roleta">
+                <div class="coluna-zero">
+                    <span onclick="NumeroEscolhido('0')">0</span>  
+                </div>
+                <div class="coluna-zero-2">
+                    <span onclick="NumeroEscolhido('00')">00</span>  
+                </div>
+                <div class="numeros">    
+                    <span onclick="NumeroEscolhido(3)" id="vermelho">3</span>
+                    <span onclick="NumeroEscolhido(6)" id="preto">6</span>
+                    <span onclick="NumeroEscolhido(9)" id="vermelho">9</span>
+                    <span onclick="NumeroEscolhido(12)" id="vermelho">12</span> 
+                    <span onclick="NumeroEscolhido(15)" id="preto">15</span>
+                    <span onclick="NumeroEscolhido(18)" id="vermelho">18</span>
+                    <span onclick="NumeroEscolhido(21)" id="vermelho">21</span>
+                    <span onclick="NumeroEscolhido(24)" id="preto">24</span> 
+                    <span onclick="NumeroEscolhido(27)" id="vermelho">27</span>  
+                    <span onclick="NumeroEscolhido(30)" id="vermelho">30</span>
+                    <span onclick="NumeroEscolhido(33)" id="preto">33</span>
+                    <span onclick="NumeroEscolhido(36)" id="vermelho">36</span>   
+                </div> 
+                <div class="numeros-col-2"> 
+                    <span onclick="NumeroEscolhido(2)" id="preto">2</span>
+                    <span onclick="NumeroEscolhido(5)" id="vermelho">5</span>
+                    <span onclick="NumeroEscolhido(8)" id="preto">8</span>
+                    <span onclick="NumeroEscolhido(11)" id="preto">11</span> 
+                    <span onclick="NumeroEscolhido(14)" id="vermelho">14</span>
+                    <span onclick="NumeroEscolhido(17)" id="preto">17</span>
+                    <span onclick="NumeroEscolhido(20)" id="preto">20</span>
+                    <span onclick="NumeroEscolhido(23)" id="vermelho">23</span> 
+                    <span onclick="NumeroEscolhido(26)" id="preto">26</span>  
+                    <span onclick="NumeroEscolhido(29)" id="preto">29</span>
+                    <span onclick="NumeroEscolhido(32)" id="vermelho">32</span>
+                    <span onclick="NumeroEscolhido(35)" id="preto">35</span>  
+                </div>
+                <div class="numeros-col-3"> 
+                    <span onclick="NumeroEscolhido(1)" id="vermelho">1</span>
+                    <span onclick="NumeroEscolhido(4)" id="preto">4</span>
+                    <span onclick="NumeroEscolhido(7)" id="vermelho">7</span>
+                    <span onclick="NumeroEscolhido(10)" id="preto">10</span> 
+                    <span onclick="NumeroEscolhido(13)" id="preto">13</span>
+                    <span onclick="NumeroEscolhido(16)" id="vermelho">16</span>
+                    <span onclick="NumeroEscolhido(19)" id="vermelho">19</span>
+                    <span onclick="NumeroEscolhido(22)" id="preto">22</span> 
+                    <span onclick="NumeroEscolhido(25)" id="vermelho">25</span>  
+                    <span onclick="NumeroEscolhido(28)" id="preto">28</span>
+                    <span onclick="NumeroEscolhido(31)" id="preto">31</span>
+                    <span onclick="NumeroEscolhido(34)" id="vermelho">34</span>   
+                </div>
+                <div class="coluna-direita">
+                    <p><span onclick="colunas('coluna_1')" id="coluna_num_1">Col 1</span></p>
+                    <p><span onclick="colunas('coluna_2')" id="coluna_num_2">Col 2</span></p>
+                    <p><span onclick="colunas('coluna_3')" id="coluna_num_3">Col 3</span></p>
+                </div>
+                <div class="coluna-ultima">
+                    <div class="coluna-baixo">
+                        <span onclick="DuziaEscolhida('1st12')" id="duzia_1">1st12</span>
+                        <span onclick="DuziaEscolhida('2nd12')" id="duzia_2">2nd12</span>
+                        <span onclick="DuziaEscolhida('3rd12')" id="duzia_3">3rd12</span>
+                    </div>
+                    <div class="coluna-pares">
+                        <div class="par-1-18">
+                            <span onclick="baixo('1:18')"       id="baixo_1_18">1:18</span>
+                            <span onclick="odd_even('par')"     id="par_span">PAR</span>
+                        </div>
+                        <div class="vermelho-coluna">
+                            <span onclick="cores('vermelho')"   id="vermelho_coluna">VERMELHO</span>
+                        </div>
+                        <div class="preto-coluna">
+                            <span onclick="cores('preto')"      id="preto_coluna">PRETO</span>
+                        </div>
+                        <div class="impar-19-36">
+                            <span onclick="odd_even('impar')"   id="impar_span">IMPAR</span>
+                            <span onclick="baixo('19:36')"      id="alto_19_36">19:36</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="apostar">
+                <input id="aposta" type="number" placeholder="Aposta">
+                <button onclick="Roleta()">APOSTAR</button>
+                <p><span id="NumeroEscolhidoSpn"></span></p>  
+                <p id="numero_sorteado"></p>
+                <p><span id="resultado"></span></p>  
+            </div>
+        </div>
+    </main>
+    <script type="text/javascript">
+        (function trocaCor() {
+            var bar = document.getElementById("barDoMoises");
+            var cor = bar.style.color;
+
+            if(cor === 'rgb(209, 15, 193)') {
+                bar.style.color = '#fff';
+            } else {
+                bar.style.color = '#d10fc1';
+            }
+            setTimeout(trocaCor,300);
+        })();
+    </script>
+    <script type="text/javascript" src="roleta.js" defer=></script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+.bichos img { 
+    object-fit: cover; 
+    margin-left: 15px;
+    width:126px;
+    height: 106px;
+}
+.bichos img:hover {
+    border: 2px solid #d10fc1;
+    cursor: pointer;
+}
+.animal_escolhido {
+    border: 2px solid #d10fc1;
+}
+.apostar {
+    margin-top: 40px;
+}
+.apostar input{
+    padding: 6px;
+    width: 130px;
+    font-family: Roboto;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #d10fc1; 
+    color: #fff;
+    border-radius: 6px;
+}
+.apostar button {
+    cursor: pointer;
+    padding: 6px;
+    font-size: 17px;
+    width: 130px;
+    font-family: Roboto;
+    background: #d10fc1;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+}
+
+.animal_escolhido_j {
+    border: 2px solid red;
+}
+.animal_certo {
+    border: 2px solid #d10fc1;
+} 
+#animal {
+    color: #d10fc1;
+    font-weight: 700;
+    font-size: 21px;
+}
+
+
+@media (max-width: 768px) {
+    body{
+        font-size: 18px;
+    }
+    .bichos img {
+        width: 150px;
+        height: 150px;
+    }
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .status-jogador {
+        display: block;
+        width: 100%;
+        margin-left: 5%;
+        word-break: break-all;
+    }
+}

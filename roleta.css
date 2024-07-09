@@ -1,0 +1,201 @@
+.roleta {  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+/* roleta css */
+.coluna-zero-2, .coluna-zero {
+    margin-left: -523px;
+}
+.coluna-zero-2 span{
+    position: absolute;
+    margin:61px 0px 0px -27px;
+    border: 1px solid #fff;
+    padding:11px 3px 12px 4px;    
+    line-height: 3.5;   
+    cursor: pointer;
+    background: green; 
+}
+.coluna-zero span{ 
+    background: green;  
+    padding:29px 8px 12px 8px;    
+    cursor: pointer;
+    border: 1px solid #fff;
+    position: absolute;
+    text-align: center;
+    margin: 0px 0px 0px -27px;
+}   
+.coluna-direita {
+    margin-top: -66px;
+    margin-left: 550px;
+    position: absolute;
+}
+.coluna-direita span{ 
+    background: green;
+    writing-mode: vertical-rl;
+    text-orientation: sideways;
+    padding:6px 3px 3px 3px;  
+    cursor: pointer;
+    border: 1px solid #fff;
+    margin-left: -14px; 
+    margin-top: -5px;
+}  
+.numeros, .numeros-col-2, .numeros-col-3 {
+    display: flex; 
+    align-items: center;
+}    
+.numeros span, .numeros-col-2 span, .numeros-col-3 span { 
+    border: 1px solid #fff;
+    padding: 13px;  
+    background: green; 
+    cursor: pointer;
+}     
+#vermelho {  
+    background: red; 
+}
+#vermelho:hover {
+    background-color: #d10fc1;
+}
+#preto {  
+    color: #fff; 
+    background: black;
+}  
+#preto:hover {
+    background-color: #d10fc1;
+}
+.apostar .dinheiro_perdido{
+    color: #fa1b1b;
+    font-size: 28px;
+    font-weight: 700;
+} 
+.apostar .dinheiro_ga{
+    color: #16eb4b;
+    font-size: 28px;
+    font-weight: 700;
+} 
+
+/* duzia */ 
+.coluna-baixo .escolhido, .coluna-pares .escolhido, .coluna-direita .escolhido{ 
+    background: #d10fc1;
+}   
+.coluna-baixo span{
+    text-align: center;
+    display: inline-block;
+    padding: 11px;  
+    cursor: pointer;  
+    background: green;
+    border: 1px solid #fff; 
+} 
+#duzia_1 {
+    width: 157px;  
+}
+#duzia_2 {
+    margin-left: -4px;
+    width: 185px;   
+}
+#duzia_3 {
+    margin-left: -4px;
+    width: 183px;    
+}
+
+/* apostas e afins */
+.apostar span {
+    line-height: 1.5;
+}
+.apostar {
+    margin-top: 40px;
+} 
+.apostar input{
+    padding: 6px;
+    width: 130px;
+    font-family: Roboto;
+    font-size: 16px;
+    background: transparent;
+    border: 2px solid #d10fc1; 
+    color: #fff;
+    border-radius: 6px;
+}
+.apostar button{
+    cursor: pointer;
+    padding: 6px;
+    font-size: 17px;
+    width: 130px;
+    font-family: Roboto;
+    background: #d10fc1;
+    color: #fff;
+    font-weight: 700;
+    border-radius: 6px;
+}
+.apostar button:hover {
+    background: #b505a7;
+    transition: 0.4s; 
+}
+
+/* ultima coluna */
+.par-1-18, .vermelho-coluna, .preto-coluna, .impar-19-36 {
+    display: flex; 
+    align-items: center;
+}
+.coluna-pares { 
+    display: flex;
+}
+.par-1-18 span{
+    cursor: pointer;
+    text-align: center; 
+    padding: 5px;
+    width: 4.9em; 
+    background: green;
+    border: 1px solid #fff;
+} 
+.vermelho-coluna span{
+    cursor: pointer;
+    width:100px;
+    text-align: center;  
+    padding: 5px;  
+    background: red;
+    border: 1px solid #fff;
+} 
+.preto-coluna span{ 
+    cursor: pointer;
+    text-align: center;  
+    padding: 5px;  
+    width: 5.3em; 
+    background: black;
+    border: 1px solid #fff;
+} 
+.impar-19-36 span{
+    cursor: pointer;
+    background: green;
+    text-align: center;
+    border: 1px solid #fff; 
+    padding: 5px;
+    width: 5.72em;  
+} 
+
+#NumeroEscolhidoSpn {
+    color: #d10fc1;
+    font-weight: 700;
+    font-size: 21px;
+}
+.roleta span:hover {
+    background-color: #d10fc1;
+    transition: 0.2s;
+}
+
+@media (max-width: 768px) {
+    body{
+        font-size: 18px;
+    } 
+    .content {
+        width: 100%;
+        margin: 0 auto;
+    }
+    .status-jogador {
+        display: block;
+        width: 100%;
+        margin-left: 5%;
+        word-break: break-all;
+    }
+}
