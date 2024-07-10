@@ -52,11 +52,7 @@
 @media (max-width: 768px) {
     body{
         font-size: 18px;
-    }
-    .bichos img {
-        width: 150px;
-        height: 150px;
-    }
+    } 
     .content {
         width: 100%;
         margin: 0 auto;

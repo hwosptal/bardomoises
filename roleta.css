@@ -198,42 +198,49 @@
         margin-left: 5%;
         word-break: break-all;
     }
+    .coluna-ultima {
+        width: 95%;
+    }
     .numeros span, .numeros-col-2 span, .numeros-col-3 span {  
         padding: 6px;   
     }
     #duzia_1, #duzia_2, #duzia_3, .par-1-18 {
-        margin-left: 1px;
+        margin-left: 6px;
     }  
     #duzia_1 { 
-        width: 130px;
+        width:30%;
     }
     #duzia_2 { 
         margin-left: -6px;
-        width: 144px;
+        width: 40%;
     }
     #duzia_3 {    
         margin-left: -6px;
-        width: 110px;
+        width: 27%;
+    }
+
+    .par-1-18{
+        margin-left: 20px;
     }
  
     .par-1-18 span{ 
         padding: 5px;
-        width: 59px;  
+        width: 60%;  
         font-size: 16px;  
     } 
     .vermelho-coluna span{ 
-        width:90px; 
+        width:100%; 
         padding: 5px;  
         font-size: 16px;   
     } 
     .preto-coluna span{  
         padding: 5px;  
-        width: 59px;  
+        width: 100%;  
         font-size: 16px;  
     } 
     .impar-19-36 span{ 
         padding: 5px;
-        width: 57px;  
+        width: 60%;  
         font-size: 16px;  
     } 
 }
@@ -242,7 +249,7 @@
 @media (max-width: 968px) {
     .coluna-zero-2, .coluna-zero {
         margin-top: 194px;
-        margin-left: -163px;
+        margin-left: -149px;
         position: absolute; 
     }
     .coluna-zero-2 span{  
@@ -255,7 +262,7 @@
     }   
     .coluna-direita {
         margin-top: 300px;
-        margin-left:296px;  
+        margin-left:268px;  
     }
     .coluna-direita span{   
         writing-mode: horizontal-tb;

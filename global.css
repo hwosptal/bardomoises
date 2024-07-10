@@ -9,12 +9,18 @@ body {
     font-family: 'Roboto';
     font-size: 16px; 
     color: #fff;
+    max-width: 100%;
     overflow-x: hidden;
-    width: 100%;
     background-color: #080707;
     margin: 0px; 
     padding: 0px;
 }  
+@media screen and(max-width: 768px) {
+    body {
+        overflow-x: hidden;
+        max-width: 100%;
+    }
+}
 a {
     color: #d10fc1; 
     text-decoration: none;
@@ -37,13 +43,12 @@ ul li {
     display: table;
     clear: both;
 }  
-.navbar {
-    width: 100%;
+.navbar { 
     background-color: #1f1a1d; 
 }
 .nav { 
     margin: 30px auto;
-    width: 960px;  
+    width: 100%;  
     padding: 15px;
 }
 .ul a {
